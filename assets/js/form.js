@@ -10,11 +10,24 @@ function createAndStoreBlog() {
     content: contentInput.value,
   };
 
-  const blogs = JSON.parse(localStorage.getItem("blogs"));
+  const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
   blogs.push(blog);
-  localStorage.setItem("blogs", JSON.stringify(blog));
+  localStorage.setItem("blogs", JSON.stringify(blogs));
+
+  console.log(blogs);
+
+  for (i = 0; i < blogs.length; i++) {
+    const post = blogs[i];
+
+    const li = document.createElement("h2");
+    li.textContent = blogs[i].title;
+    console.log(blogs[i].title);
+
+    //blogList.appendChild(li);
+  }
 }
 
 submitButton.addEventListener("click", function (event) {
+  event.preventDefault();
   createAndStoreBlog();
 });
