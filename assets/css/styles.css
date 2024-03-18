@@ -30,6 +30,15 @@ header {
   justify-content: space-around;
   border-top: solid;
   margin-top: 10px;
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  top: 325px;
+  color: white;
+  font-size: 250%;
+  text-shadow: 2px 2px black;
 }
 
 .circle-div {
@@ -41,9 +50,10 @@ header {
 }
 
 .circle {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
+  margin: 50px;
   background: linear-gradient(45deg, #ff5733, #ffbd33);
 }
 
@@ -52,15 +62,43 @@ form {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: left;
+  padding: 20px;
 }
 
 h2 {
   font-size: 150%;
-  text-align: center;
+  align-self: center;
 }
 
-/* Dark Mode from lessons 4-11, also 5-3*/
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#content {
+  height: 100px;
+}
+
+button {
+  align-self: center;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.button {
+  align-items: center;
+}
+
+/* Dark Mode from lesson 4-11, also 5-3*/
 .dark {
   background-color: #243447;
   height: 100vh;

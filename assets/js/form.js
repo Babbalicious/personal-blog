@@ -16,15 +16,18 @@ function createAndStoreBlog() {
 
   console.log(blogs);
 
-  for (i = 0; i < blogs.length; i++) {
-    const post = blogs[i];
+  //switch to blog.html
+  window.location.href = "index.html";
 
-    const li = document.createElement("h2");
-    li.textContent = blogs[i].title;
-    console.log(blogs[i].title);
+  // for (i = 0; i < blogs.length; i++) {
+  //   const post = blogs[i];
 
-    //blogList.appendChild(li);
-  }
+  //   const li = document.createElement("h2");
+  //   li.textContent = blogs[i].title;
+  //   console.log(blogs[i].title);
+
+  //blogList.appendChild(li);
+  //}
 }
 
 submitButton.addEventListener("click", function (event) {
