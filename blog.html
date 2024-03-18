@@ -7,29 +7,26 @@
     <link rel="stylesheet" href="./assets/css/blog.css" />
   </head>
   <body>
-    <header>
-      <h1>My First Blog</h1>
-      <div class="header">
-        <button onclick="window.location.href='index.html';">⬅️ Back</button>
-        <img
-          src="./assets/images/sun-icon.png"
-          id="theme-switcher"
-          alt="theme-switcher"
-        />
-      </div>
-    </header>
-    <section>
-      <div class="blogPost">
-        <h2 id="blogTitle">Blog Title</h2>
-        <p id="blogContent">Here is my content</p>
-        <p>Posted by: <span id="postedBy"></span></p>
-      </div>
-    </section>
-    <footer>
-      <p><a href="#">Link to My Portfolio</a></p>
-      <p>Blog: Full-Stack Blog</p>
-      <p>Email: <a href="mailto:ccbabb@gmail.com">ccbabb@gmail.com</a></p>
-    </footer>
+    <div class="container light">
+      <header>
+        <h1>My First Blog</h1>
+        <div class="header">
+          <button onclick="window.location.href='index.html';">⬅️ Back</button>
+          <img
+            src="./assets/images/sun-icon.png"
+            id="theme-switcher"
+            alt="theme-switcher"
+          />
+        </div>
+      </header>
+      <section id="blogSection"></section>
+      <footer>
+        <p><a href="#">Link to My Portfolio</a></p>
+        <p>Blog: <a href="index.html">Full-Stack Blog</a></p>
+        <p>Email: <a href="mailto:ccbabb@gmail.com">ccbabb@gmail.com</a></p>
+      </footer>
+    </div>
     <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/logic.js"></script>
   </body>
 </html>

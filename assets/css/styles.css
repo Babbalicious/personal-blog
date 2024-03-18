@@ -98,19 +98,19 @@ button {
   align-items: center;
 }
 
-/* Dark Mode from lesson 4-11, also 5-3*/
+/* Dark Mode from lesson 4-11 & 5-3*/
 .dark {
   background-color: #243447;
   height: 100vh;
   color: #bebebe;
 }
 
-.dark li a {
-  color: #bebebe;
+.dark a {
+  color: #b0ce04;
 }
 
-.dark li a:hover {
-  background-color: #111;
+.dark a:hover {
+  font-weight: bold;
 }
 
 /* Light Mode */
@@ -120,10 +120,10 @@ button {
   height: 100vh;
 }
 
-.light li a {
-  color: black;
+.light a {
+  color: blue;
 }
 
-.light li a:hover {
-  background-color: rgb(29, 128, 210);
+.light a:hover {
+  font-weight: bold;
 }

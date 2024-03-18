@@ -2,11 +2,15 @@
 
 ## Purpose
 
-This web application allows the user to enter in employees by their first name, last name and salary. The user can enter as many employees as they choose. The console will log the number of employees, their average salary, and choose an employee randomly.
+This web application allows the user to make blog entries. On the main page, the user can enter a Username, Title, and Content. When the user hits the submit button, the entered data is stored in local storage. The user is then taken to a blog page that displays all blog entries that have been entered.
 
-## Screenshot
+Additionally, both pages feature a sun or moon icon in the top right. When clicked the user can toggle between light and dark mode on the website.
+
+## Screenshots
 
 ![Application Screenshot](Assets/images/Screenshot.png)
+
+![Application Screenshot 2](Assets/images/Screenshot2.png)
 
 ## Contact Me
 

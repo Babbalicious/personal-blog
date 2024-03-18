@@ -17,17 +17,7 @@ function createAndStoreBlog() {
   console.log(blogs);
 
   //switch to blog.html
-  window.location.href = "index.html";
-
-  // for (i = 0; i < blogs.length; i++) {
-  //   const post = blogs[i];
-
-  //   const li = document.createElement("h2");
-  //   li.textContent = blogs[i].title;
-  //   console.log(blogs[i].title);
-
-  //blogList.appendChild(li);
-  //}
+  window.location.href = "blog.html";
 }
 
 submitButton.addEventListener("click", function (event) {

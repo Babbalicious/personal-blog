@@ -1,13 +1,32 @@
-const blogTitle = document.getElementById("blogTitle");
-const blogContent = document.getElementById("blogContent");
-const postedBy = document.getElementById("postedBy");
+const blogSection = document.getElementById("blogSection");
 
 blogs = [];
 
 function renderBlogs() {
-  blogTitle.textContent = blogs[0].title;
-  blogContent.textContent = blogs[0].content;
-  postedBy.textContent = blogs[0].username;
+  for (let i = 0; i < blogs.length; i++) {
+    //create a div and elements for each blogPost
+    const div = document.createElement("div");
+    const h2 = document.createElement("h2");
+    const p = document.createElement("p");
+    const p2 = document.createElement("p");
+
+    //add the new elements
+    blogSection.appendChild(div);
+    div.appendChild(h2);
+    div.appendChild(p);
+    div.appendChild(p2);
+
+    //add classes to each element for CSS
+    div.setAttribute("class", "blogPost");
+    h2.setAttribute("class", "blogTitle");
+    p.setAttribute("class", "blogContent");
+    p2.setAttribute("class", "user");
+
+    // render the text
+    h2.textContent = blogs[i].title;
+    p.textContent = blogs[i].content;
+    p2.textContent = `Posted by: ${blogs[i].username}`;
+  }
 }
 
 function init() {
