@@ -22,5 +22,11 @@ function createAndStoreBlog() {
 
 submitButton.addEventListener("click", function (event) {
   event.preventDefault();
+
+  if (!usernameInput.value || !titleInput.value || !contentInput.value) {
+    window.alert("Please complete the form.");
+    return;
+  }
+
   createAndStoreBlog();
 });

@@ -8,9 +8,9 @@ Additionally, both pages feature a sun or moon icon in the top right. When click
 
 ## Screenshots
 
-![Application Screenshot](Assets/images/Screenshot.png)
+![Application Screenshot](assets/images/Screenshot.png)
 
-![Application Screenshot 2](Assets/images/Screenshot2.png)
+![Application Screenshot 2](assets/images/Screenshot2.png)
 
 ## Contact Me
 
